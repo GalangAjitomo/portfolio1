@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>M Galang Ajitomo</title>
+</head>
+<body>
+    <nav class="sticky-top">
+        <div class="logo">
+            <i class="fa-solid fa-code"></i>
+        </div>
+        <div class="links">
+            <a href="#about" class="active">About</a>
+            <a href="#works">Portfolio</a>
+            <a href="#footer">Contact Me</a>
+        </div>
+    </nav>
+
+    <div id="about" class="about">
+        <div class="left">
+            <h3>Full-Stack Developer</h3>
+            <div class="info">
+                <h2>I'm Muhammad Galang Ajitomo</h2>
+                <p>I create seamless and engaging web applications with cutting-edge technologies.</p>
+                <div class="buttons">
+                    <button class="hire">
+                        Hire me <i class="fa-solid fa-plus"></i>
+                    </button>
+                    <button class="email">
+                        Copy Email <i class="fa-solid fa-copy"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <a href="#" class="online">
+                <i class="fa-solid fa-circle"></i> Available For Job
+            </a>
+            <img src="assets/profile.jpg">
+        </div>
+    </div>
+    
+    <div id="works" class="works">
+        <div class="left">
+            <h3><i class="fa-solid fa-circle"></i> Recent Works</h3>
+            <div class="works-list">
+                <div class="item">
+                    <div class="work-info">
+                        <h5 class="active">Team Lead</h5>
+                        <p>2022 - Present</p>
+                    </div>
+                    <p>PT. Bukit Makmur Mandiri Utama</p>
+                </div>
+                <div class="item">
+                    <div class="work-info">
+                        <h5 class="active">Middle .NET Developer</h5>
+                        <p>2021 - 2022</p>
+                    </div>
+                    <p>Global Sentra Teknologi</p>
+                </div>
+                <div class="item">
+                    <div class="work-info">
+                        <h5 class="active">Junior .NET Developer</h5>
+                        <p>2019 - 2021</p>
+                    </div>
+                    <p>PT. Xsis Mitra Utama</p>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="item">
+                <a href="#">About My Work</a>
+                <p>Creating robust backend solutions with .NET and crafting dynamic, user-friendly frontends using Blazor and React.js.</p>
+            </div>
+            <div class="item">
+                <a href="#">Full-Stack Development</a>
+                <p>Delivering complete solutions by integrating .NET backend with Blazor and React.js frontends.</p>
+            </div>
+            <div class="item">
+                <a href="#">API Development</a>
+                <p>Building robust and scalable APIs to enhance functionality and connectivity of applications.</p>
+            </div>
+            <div class="item">
+                <a href="#">Database Management</a>
+                <p>Designing and maintaining efficient database solutions to ensure data integrity and accessibility.</p>
+            </div>
+            <div class="item">
+                <a href="#">Agile Methodologies</a>
+                <p>Utilizing Agile methodologies to ensure efficient project management and timely delivery.</p>
+            </div>
+            
+        </div>
+    </div>
+    
+
+    <footer id="footer">
+        <a href="#">My Portfolio</a>
+        <div class="socials">
+            <!-- <a href="#">Github</a> -->
+            <a href="https://www.instagram.com/galangggji/">Instagram</a>
+            <a href="https://www.linkedin.com/in/galangajitomo/" target="_blank">LinkedIn</a>
+        </div>
+        <a href="#" class="online">
+            <i class="fa-solid fa-circle"></i>
+            Available For Job
+        </a>
+    </footer>
+
+    <script>
+        document.querySelector('.hire').addEventListener('click', function() {
+            window.location.href = 'mailto:galangajitomo@gmail.com';
+        });
+
+        document.querySelector('.email').addEventListener('click', function() {
+            const email = 'galangajitomo@gmail.com';
+            navigator.clipboard.writeText(email).then(() => {
+                alert('Email copied to clipboard: ' + email);
+            }).catch(err => {
+                console.error('Failed to copy email: ', err);
+            });
+        });
+    </script>
+</body>
+</html>
